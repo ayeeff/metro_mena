@@ -1,0 +1,483 @@
+{
+  "_comment": "Precomputed job matrix for metro-transit.yml, metro_mena. One job per (extract, cluster), capped at 10 cities so a single failing city cannot fail its whole group. Clustering bounds the coarse cut; the cap bounds the blast radius. Generated rather than computed in jq, which failed in CI under set -euo pipefail with no message.",
+  "perJob": 10,
+  "cityCount": 97,
+  "groupCount": 63,
+  "groups": [
+    {
+      "extract": "algeria",
+      "cluster": "algeria",
+      "cities": [
+        "boumerdes:3.23,36.57,3.73,36.93",
+        "chlef:1.08,35.99,1.58,36.35",
+        "eltarf:8.06,36.59,8.56,36.95",
+        "mostaganem:-0.16,35.75,0.34,36.11",
+        "tipaza:2.2,36.41,2.7,36.77",
+        "tlemcen:-1.57,34.71,-1.07,35.07"
+      ]
+    },
+    {
+      "extract": "algeria",
+      "cluster": "algeria-156",
+      "cities": [
+        "algiers:2.75055,36.46307,3.35055,37.06306",
+        "oran:-0.88,35.52,-0.38,35.88"
+      ]
+    },
+    {
+      "extract": "angola",
+      "cluster": "angola-251",
+      "cities": [
+        "luanda:12.93442,-9.13829,13.53443,-8.53829"
+      ]
+    },
+    {
+      "extract": "benin",
+      "cluster": "benin",
+      "cities": [
+        "cotonou:2.21999,6.10001,2.81999,6.70001",
+        "portonovo:2.31663,6.18331,2.91663,6.78331"
+      ]
+    },
+    {
+      "extract": "botswana",
+      "cluster": "botswana",
+      "cities": [
+        "gaborone:25.61195,-24.94631,26.21195,-24.34631"
+      ]
+    },
+    {
+      "extract": "burkina-faso",
+      "cluster": "burkina-faso",
+      "cities": [
+        "ouagadougou:-1.82473,12.07032,-1.22473,12.67032"
+      ]
+    },
+    {
+      "extract": "cameroon",
+      "cluster": "cameroon",
+      "cities": [
+        "yaounde:11.21665,3.5667,11.81665,4.1667"
+      ]
+    },
+    {
+      "extract": "central-african-republic",
+      "cluster": "central-african-republic",
+      "cities": [
+        "bangui:18.25829,4.06664,18.85829,4.66664"
+      ]
+    },
+    {
+      "extract": "congo-brazzaville",
+      "cluster": "congo-brazzaville-212",
+      "cities": [
+        "brazzaville:14.98469,-4.55919,15.58469,-3.95919"
+      ]
+    },
+    {
+      "extract": "congo-democratic-republic",
+      "cluster": "congo-democratic-republic-243",
+      "cities": [
+        "kinshasa:15.01497,-4.62972,15.61497,-4.02972"
+      ]
+    },
+    {
+      "extract": "djibouti",
+      "cluster": "djibouti",
+      "cities": [
+        "djibouti:42.84801,11.29501,43.448,11.89501"
+      ]
+    },
+    {
+      "extract": "egypt",
+      "cluster": "egypt-155",
+      "cities": [
+        "alexandria:29.6187,30.9001,30.2187,31.5001",
+        "cairo:30.94997,29.74996,31.54997,30.34996"
+      ]
+    },
+    {
+      "extract": "eritrea",
+      "cluster": "eritrea",
+      "cities": [
+        "asmara:38.63332,15.03334,39.23332,15.63334"
+      ]
+    },
+    {
+      "extract": "ethiopia",
+      "cluster": "ethiopia-50",
+      "cities": [
+        "addisababa:38.40001,8.73331,39,9.33331"
+      ]
+    },
+    {
+      "extract": "gabon",
+      "cluster": "gabon",
+      "cities": [
+        "libreville:9.15796,0.08539,9.75797,0.68539"
+      ]
+    },
+    {
+      "extract": "gcc-states",
+      "cluster": "gcc-states",
+      "cities": [
+        "doha:51.23297,24.98656,51.83296,25.58656",
+        "jubail:49.41,26.84,49.91,27.2",
+        "kuwait:47.67831,29.06972,48.2783,29.66972",
+        "manama:50.28306,25.93614,50.88305,26.53614",
+        "mecca:39.58,21.21,40.08,21.57",
+        "rabigh:38.79,22.58,39.29,22.94",
+        "raslaffan:51.37,25.73,51.87,26.09",
+        "subiya:47.91,29.07,48.41,29.43",
+        "ummalquwain:55.3,25.37,55.8,25.73"
+      ]
+    },
+    {
+      "extract": "gcc-states",
+      "cluster": "gcc-states-42",
+      "cities": [
+        "jeddah:38.94,21.36,39.44,21.72"
+      ]
+    },
+    {
+      "extract": "gcc-states",
+      "cluster": "gcc-states-43",
+      "cities": [
+        "riyadh:46.47274,24.34083,47.07274,24.94083"
+      ]
+    },
+    {
+      "extract": "gcc-states",
+      "cluster": "gcc-states-44",
+      "cities": [
+        "dubai:54.97998,24.93,55.57997,25.53",
+        "fujairah:56.08,24.95,56.58,25.31",
+        "sharjah:55.33302,25.26802,55.63011,25.40861"
+      ]
+    },
+    {
+      "extract": "gcc-states",
+      "cluster": "gcc-states-45",
+      "cities": [
+        "dammam:49.73347,26.19625,50.26543,26.5286",
+        "khobar:49.96,26.1,50.46,26.46"
+      ]
+    },
+    {
+      "extract": "gcc-states",
+      "cluster": "us-northeast-63",
+      "cities": [
+        "medina:39.36,24.29,39.86,24.65"
+      ]
+    },
+    {
+      "extract": "georgia",
+      "cluster": "georgia",
+      "cities": [
+        "tbilisi:44.4908,41.42501,45.0908,42.02501"
+      ]
+    },
+    {
+      "extract": "ghana",
+      "cluster": "ghana-47",
+      "cities": [
+        "accra:-0.51672,5.25003,0.08328,5.85003"
+      ]
+    },
+    {
+      "extract": "guinea",
+      "cluster": "guinea",
+      "cities": [
+        "conakry:-13.98024,9.23152,-13.38023,9.83152"
+      ]
+    },
+    {
+      "extract": "iran",
+      "cluster": "iran",
+      "cities": [
+        "isfahan:51.42,32.47,51.92,32.83",
+        "mashhad:59.32,36.13,59.82,36.49"
+      ]
+    },
+    {
+      "extract": "iran",
+      "cluster": "iran-269",
+      "cities": [
+        "tehran:51.12434,35.37194,51.72434,35.97194"
+      ]
+    },
+    {
+      "extract": "iraq",
+      "cluster": "iraq-173",
+      "cities": [
+        "baghdad:44.09387,33.03865,44.69387,33.63865"
+      ]
+    },
+    {
+      "extract": "israel-and-palestine",
+      "cluster": "israel-and-palestine",
+      "cities": [
+        "ashdod:34.4,31.62,34.9,31.98",
+        "ashkelon:34.32,31.49,34.82,31.85",
+        "hadera:34.63,32.26,35.13,32.62",
+        "jerusalem:34.90663,31.47841,35.50662,32.07841",
+        "palmachim:34.47,31.75,34.97,32.11"
+      ]
+    },
+    {
+      "extract": "israel-and-palestine",
+      "cluster": "israel-and-palestine-1",
+      "cities": [
+        "telaviv:34.68,31.98,34.88,32.18"
+      ]
+    },
+    {
+      "extract": "ivory-coast",
+      "cluster": "ivory-coast",
+      "cities": [
+        "yamoussoukro:-5.5755,6.51838,-4.9755,7.11838"
+      ]
+    },
+    {
+      "extract": "ivory-coast",
+      "cluster": "ivory-coast-36",
+      "cities": [
+        "abidjan:-4.34005,5.02,-3.74005,5.62"
+      ]
+    },
+    {
+      "extract": "jordan",
+      "cluster": "jordan-157",
+      "cities": [
+        "amman:35.6333,31.65002,36.2333,32.25003"
+      ]
+    },
+    {
+      "extract": "kenya",
+      "cluster": "kenya-256",
+      "cities": [
+        "nairobi:36.51666,-1.58335,37.11665,-0.98335"
+      ]
+    },
+    {
+      "extract": "lebanon",
+      "cluster": "lebanon-197",
+      "cities": [
+        "beirut:35.2097,33.57198,35.8097,34.17197"
+      ]
+    },
+    {
+      "extract": "lesotho",
+      "cluster": "lesotho",
+      "cities": [
+        "maseru:27.18327,-29.61667,27.78327,-29.01667"
+      ]
+    },
+    {
+      "extract": "libya",
+      "cluster": "lebanon-196",
+      "cities": [
+        "tripoli:12.88001,32.5925,13.48001,33.1925"
+      ]
+    },
+    {
+      "extract": "madagascar",
+      "cluster": "madagascar",
+      "cities": [
+        "antananarivo:47.21663,-19.21664,47.81663,-18.61664"
+      ]
+    },
+    {
+      "extract": "malawi",
+      "cluster": "malawi-206",
+      "cities": [
+        "lilongwe:33.48331,-14.2833,34.0833,-13.68329"
+      ]
+    },
+    {
+      "extract": "mali",
+      "cluster": "mali",
+      "cities": [
+        "bamako:-8.30004,12.35001,-7.70004,12.95002"
+      ]
+    },
+    {
+      "extract": "mauritius",
+      "cluster": "mauritius",
+      "cities": [
+        "portlouis:57.19999,-20.46664,57.79999,-19.86664"
+      ]
+    },
+    {
+      "extract": "morocco",
+      "cluster": "morocco-1",
+      "cities": [
+        "marrakech:-8.11,31.53,-7.91,31.73"
+      ]
+    },
+    {
+      "extract": "morocco",
+      "cluster": "morocco-218",
+      "cities": [
+        "casablanca:-7.91637,33.29998,-7.31637,33.89998",
+        "rabat:-7.13613,33.7253,-6.53613,34.3253"
+      ]
+    },
+    {
+      "extract": "mozambique",
+      "cluster": "mozambique",
+      "cities": [
+        "maputo:32.28916,-26.25528,32.88916,-25.65528"
+      ]
+    },
+    {
+      "extract": "namibia",
+      "cluster": "namibia",
+      "cities": [
+        "windhoek:16.78355,-22.87001,17.38355,-22.27001"
+      ]
+    },
+    {
+      "extract": "niger",
+      "cluster": "niger",
+      "cities": [
+        "niamey:1.81666,13.21671,2.41665,13.81671"
+      ]
+    },
+    {
+      "extract": "nigeria",
+      "cluster": "nigeria-46",
+      "cities": [
+        "abuja:7.23333,8.78333,7.83333,9.38333",
+        "lagos:3.09153,6.14326,3.69153,6.74326"
+      ]
+    },
+    {
+      "extract": "senegal-and-gambia",
+      "cluster": "senegal-and-gambia",
+      "cities": [
+        "dakar:-17.77313,14.41583,-17.17313,15.01583"
+      ]
+    },
+    {
+      "extract": "sierra-leone",
+      "cluster": "sierra-leone",
+      "cities": [
+        "freetown:-13.53421,8.17001,-12.93421,8.77001"
+      ]
+    },
+    {
+      "extract": "south-africa",
+      "cluster": "south-africa-207",
+      "cities": [
+        "bloemfontein:25.92991,-29.41999,26.52991,-28.81999",
+        "johannesburg:27.73001,-26.47005,28.33001,-25.87005",
+        "midrand:27.88,-26.17,28.38,-25.81",
+        "pretoria:27.92943,-26.00692,28.52943,-25.40692"
+      ]
+    },
+    {
+      "extract": "south-africa",
+      "cluster": "south-africa-208",
+      "cities": [
+        "capetown:18.13499,-34.22001,18.73499,-33.62001"
+      ]
+    },
+    {
+      "extract": "sudan",
+      "cluster": "sudan-246",
+      "cities": [
+        "khartoum:32.23418,15.28808,32.83418,15.88808"
+      ]
+    },
+    {
+      "extract": "swaziland",
+      "cluster": "swaziland",
+      "cities": [
+        "lobamba:30.9,-26.76667,31.5,-26.16667",
+        "mbabane:30.83334,-26.61665,31.43334,-26.01665"
+      ]
+    },
+    {
+      "extract": "syria",
+      "cluster": "us-northeast-66",
+      "cities": [
+        "damascus:35.99999,33.20003,36.59999,33.80003"
+      ]
+    },
+    {
+      "extract": "tanzania",
+      "cluster": "tanzania",
+      "cities": [
+        "dodoma:35.45001,-6.48331,36.05,-5.88331"
+      ]
+    },
+    {
+      "extract": "tanzania",
+      "cluster": "tanzania-221",
+      "cities": [
+        "daressalaam:38.96834,-7.10001,39.56834,-6.50001"
+      ]
+    },
+    {
+      "extract": "togo",
+      "cluster": "togo-250",
+      "cities": [
+        "lome:0.97154,5.87874,1.47154,6.37874"
+      ]
+    },
+    {
+      "extract": "tunisia",
+      "cluster": "tunisia",
+      "cities": [
+        "kairouan:9.85,35.5,10.35,35.86",
+        "tunis:9.87968,36.50278,10.47968,37.10278"
+      ]
+    },
+    {
+      "extract": "turkey",
+      "cluster": "turkey-48",
+      "cities": [
+        "adana:35.07,36.82,35.57,37.18",
+        "ankara:32.5644,39.62724,33.16439,40.22724",
+        "gaziantep:37.13,36.89,37.63,37.25"
+      ]
+    },
+    {
+      "extract": "turkey",
+      "cluster": "turkey-49",
+      "cities": [
+        "bursa:28.81,40.01,29.31,40.37",
+        "istanbul:28.71,40.805,29.31001,41.405"
+      ]
+    },
+    {
+      "extract": "uganda",
+      "cluster": "uganda",
+      "cities": [
+        "kampala:32.28333,0.01666,32.88332,0.61666"
+      ]
+    },
+    {
+      "extract": "yemen",
+      "cluster": "yemen-263",
+      "cities": [
+        "sanaa:43.9066,15.05473,44.50659,15.65473"
+      ]
+    },
+    {
+      "extract": "zambia",
+      "cluster": "zambia-252",
+      "cities": [
+        "lusaka:27.98332,-15.71664,28.58332,-15.11664"
+      ]
+    },
+    {
+      "extract": "zimbabwe",
+      "cluster": "zimbabwe-235",
+      "cities": [
+        "harare:30.7447,-18.11779,31.34471,-17.51779"
+      ]
+    }
+  ]
+}
